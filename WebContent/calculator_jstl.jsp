@@ -15,7 +15,6 @@
     <h3 style="color:red">${error}</h3>
 </c:forEach>
 
-
 <form action="JustDoIt" method="POST">
     <table>
         <tr>
