@@ -1,0 +1,31 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+    <display-name>Simple Calculator</display-name>
+    <description>
+        Simple Calculator
+    </description>
+
+
+    <servlet>
+        <servlet-name>calculator-servlet</servlet-name>
+        <servlet-class>
+            com.tony.src.CalculatorServlet
+        </servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>calculator-servlet</servlet-name>
+        <url-pattern>/JustDoIt</url-pattern>
+    </servlet-mapping>
+
+
+    <welcome-file-list>
+        <welcome-file>JustDoIt</welcome-file>
+    </welcome-file-list>
+
+</web-app>
